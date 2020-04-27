@@ -118,18 +118,16 @@ class pluginHighlight extends Plugin {
     $html .= '<link id="highlight-theme-link" type="text/css" rel="stylesheet" href="'.$this->getValue('styles').'">';
     $html .= '<script src="'.$this->highlightjs.'"></script>';
     $html .= '<script>hljs.initHighlightingOnLoad();</script>';
-
-    $html .= '<h4>'.$L->get('highlight-example').'</h4>';
-
+    $html .= '<br><br>'
+    $html .= '<h3>'.$L->get('highlight-example').'</h3>';
     $html .= '<h4>HTML</h4>';
     $html .= '<pre><code>';
-      $html .= htmlspecialchars('<div>test text<div><br/><span>test text<span>');
+    $html .= htmlspecialchars('<div>test text<div><br/><span>test text<span>');
     $html .= '</code></pre>';
-
     $html .= '<h4>CSS</h4>';
     $html .= '<pre><code>';
-      $html .= 'html { padding: 10px; } <br/>';
-      $html .= '.classname { margin: 10px; }';
+    $html .= 'html { padding: 10px; } <br/>';
+    $html .= '.classname { margin: 10px; }';
     $html .= '</code></pre>';
     //test highlight theme 
 
